@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ -d "/opt/Discord" ]; then
+    echo "Discord directory exists. Removing it..."
+    sudo rm -rf /opt/discord
+fi
+
 echo "Downloading Discord..."
 wget -O discord.tar.gz "https://discord.com/api/download?platform=linux&format=tar.gz"
 if [ $? -ne 0 ]; then
