@@ -2,7 +2,7 @@
 
 if [ -d "/opt/Discord" ]; then
     echo "Discord directory exists. Removing it..."
-    sudo rm -rf /opt/discord
+    sudo rm -rf /opt/{Discord,discord}
 fi
 
 echo "Downloading Discord..."
