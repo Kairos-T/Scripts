@@ -1,5 +1,17 @@
 #!/bin/bash
 
+set -e
+
+if pgrep -x "Discord" > /dev/null; then
+    echo "Discord is running. Do you want to close it? (y/n)"
+    read -r response
+    if [ "$response" = "y" ]; then
+        killall Discord
+    else
+        echo "Discord is running. Unable to continue update."
+        exit 1
+    fi
+
 if [ -d "/opt/Discord" ]; then
     echo "Discord directory exists. Removing it..."
     sudo rm -rf /opt/{Discord,discord}
