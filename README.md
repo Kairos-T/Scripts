@@ -6,3 +6,5 @@ Streamlining the installation and setup process for some stuff I used for Linux.
     - Installs or updates Discord by compiling from source. 
 - [Fonts Installation](https://github.com/Kairos-T/Scripts/tree/main/Fonts)
     - Fix missing fonts. Includes Windows pre-installed fonts, Simplified Chinese fonts, Math fonts and plenty more.
+- [Wireshark Dark Mode](https://github.com/Kairos-T/Scripts/tree/main/Wireshark)
+    - Use a dark theme for Wireshark.
